@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="sass/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800" rel="stylesheet">
+<script src="/js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="site-body">
+
+        <header class="site-header">
+            <nav class="container">
+                <a class="site-header__icon" href="#"></a>
+                <button type="button" class="header-toogle"><span>-</span></button>
+                <ul class="site-header__list">
+                    <li class="list--title">
+                       <span class="list--title-text">Music </span> 
+                        <ul>
+                            <li>
+                                <a href="#"> Discover</a>
+                            </li>
+                            <li>
+                                <a href="#"> Rising</a>
+                            </li>
+                            <li>
+                                <a href="#"> Inspiration</a>
+                            </li>
+                            <li>
+                                <a href="#"> My stars</a>
+                            </li>
+                            <li>
+                                <a href="#"> Songs</a>
+                            </li>
+                            <li>
+                                <a href="#"> Artist</a>
+                            </li>
+                            <li>
+                                <a href="#"> Albums</a>
+                            </li>
+                            <li>
+                                <a href="#"> Radio</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="list--title"><span class="list--title-text list--title-text2"> playlist</span>
+                        <button type="button">+</button>
+                        <ul>
+
+                            <li><a href="#"> Uplabs focus golden 80s</a> </li>
+                            <li><a href="#"> Gaming OSTs Playlist title</a></li>
+                            <li><a href="#"> Smash it!</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </header>
+
+        <main class="site-main">
+            <!--Sección central-->
+            <section class="songs-section container--main">
+                <div class="songs-section__info">
+                    <form action="" class="search-form">
+                        <button type="submit"></button>
+                        <label for="search">Type here to search</label>
+                        <input type="text" id="search" placeholder="Type here to search">
+                    </form>
+                    <button class="btn--fav" type="button"><span></span> Save to My stars</button>
+                    <h1>Katy Perry</h1>
+
+                    <ul class="breadcrumb">
+                        <li><a href="#">Albums</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Related artist</a></li>
+                    </ul>
+                </div>
+
+                <div class="songs-section__media scrollbar">
+                    <ul class="wrapper">
+                        <li>
+                            <a href=""><img src="images/portada1.png" alt=""></a>
+                            Witness
+                            <span>2017</span>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/portada1.png" alt=""></a>
+                            PRISM
+                            <span>2013</span>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/portada1.png" alt=""></a>
+                            Teenage Dream
+                            <span>2012</span>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/portada1.png" alt=""></a>
+                            Titulo ksjdf
+                            <span>2012</span>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/portada1.png" alt=""></a>
+                            Titulo ksjdf
+                            <span>2012</span>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/portada1.png" alt=""></a>
+                            Titulo ksjdf
+                            <span>2012</span>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/portada1.png" alt=""></a>
+                            Titulo ksjdf
+                            <span>2012</span>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/portada1.png" alt=""></a>
+                            Titulo ksjdf
+                            <span>2012</span>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/portada1.png" alt=""></a>
+                            Titulo ksjdf
+                            <span>2012</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="songs-list">
+                <div class="user"> <span class="user-name">Andrew Z</span>
+
+                    <span class="user-icon"></span>
+                </div>
+                <div class="container--songs">
+                    <ul class="songs-list__list" id="list">
+                        <li>
+                            Random selection
+                        </li>                       
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+
+            <div class="cover--sm">
+                <img src="images/miniportada.png" alt="">
+                <div class="play-title">
+                    <span>Rhinenstone Eyes</span>
+                    <span> Gorillaz </span>
+                </div>
+            </div>
+            <!--botonera-->
+            <div class="player">
+                <!--boton aleatorio -->                
+                <button type="button" id="randomBtn" class="semitransparent"> <input type="checkbox" name="" id="random"></button>
+                <!--boton anterior -->
+                <button type="button" id="back"></button>
+                <!-- boton pause -->
+                <button class="fas fa-play" type="button" id="play"></button>
+                <button class="fas fa-pause hide" type="button" id="pause" ></button>
+                <!--boton siguiente -->
+                <button type="button" id="next"></button>
+                <!--boton repetir -->
+                <button id="repeatBtn" type="button"><input type="checkbox" name="" id="repeat"></button>
+            </div>
+            <!--barra de audio-->
+            <div class="volume">
+                <button class="volumeup" type="button" id="volumeup"></button>
+                <div class="volume-control">
+                <span class="bar volumebar--sm"></span>
+                <span class="bar volumebar" id="volumebar"></span>
+            </div>
+                <button class="volumedown" type="button" id="volumedown"></button>
+                <!--Para la barra de volumen-->
+            </div>
+            <!--barra de video-->
+            <div class="audio">
+                <span id="tiempopasado">0:00</span>
+                <span class="bar bar--audio--sm"></span>
+                <span class="bar bar--audio" id="audiobar"></span>
+                <span id="restante">0:00</span>
+                <!--Para la barra de video-->
+
+                <!--Boton conectar con otros dispositivos-->
+                <button type="button" class="podcast"></button>
+                <!--boton que no se lo que hace-->
+                <button type="button" class="play-menu"></button>
+            </div>
+        </footer>
+
+    </div>
+
+<audio class="audio" id="audio">
+    <source src="" type="audio/mp3">
+    </audio>
+</body>
+
+</html>
